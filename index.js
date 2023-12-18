@@ -18,6 +18,7 @@ app.use(function (req, res, next) {
 
 initializeApp({ 
     credential: admin.credential.cert(serviceAccount), 
+    //Here your project id get from firebase
     projectId: "sicurezza-user-app", });
 
 app.post("/send", function (req, res) {
